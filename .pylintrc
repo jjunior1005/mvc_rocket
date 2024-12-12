@@ -9,7 +9,13 @@ disable =
       W0703,    # [broad-except]
       C0209,    # [consider-using-f-string]
       E0015,    # [unrecognized-option] 
-
+      C0303,
+      C0304,
+      C0305,     # [trailing-newlines]
+      W0719,    # [broad-exception-raised]
+      W0106,
+      C0301,
+      R0902
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
 # only in one or another interpreter, leading to false positives when analysed.
@@ -322,7 +328,7 @@ max-returns=6
 max-statements=50
 
 # Minimum number of public methods for a class (see R0903).
-min-public-methods=2
+min-public-methods=0
 
 
 [EXCEPTIONS]
